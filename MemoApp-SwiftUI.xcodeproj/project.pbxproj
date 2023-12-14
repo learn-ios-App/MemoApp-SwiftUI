@@ -11,6 +11,13 @@
 		8B1EC25B2B27776400F1A312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EC25A2B27776400F1A312 /* ContentView.swift */; };
 		8B1EC25D2B27776500F1A312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1EC25C2B27776500F1A312 /* Assets.xcassets */; };
 		8B1EC2602B27776500F1A312 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1EC25F2B27776500F1A312 /* Preview Assets.xcassets */; };
+		8B1EC2672B2777D800F1A312 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EC2662B2777D800F1A312 /* APIError.swift */; };
+		8B1EC2692B2777FB00F1A312 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EC2682B2777FB00F1A312 /* Memo.swift */; };
+		8B1EC26B2B27781700F1A312 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EC26A2B27781700F1A312 /* APIClient.swift */; };
+		8B1EC26D2B27783500F1A312 /* URLCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EC26C2B27783500F1A312 /* URLCreater.swift */; };
+		8B1EC26F2B27788D00F1A312 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EC26E2B27788D00F1A312 /* MemoData.swift */; };
+		8BAF2F7F2B28272500F14FED /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAF2F7E2B28272500F14FED /* ListRow.swift */; };
+		8BAF2F812B28309600F14FED /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAF2F802B28309600F14FED /* InputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		8B1EC25A2B27776400F1A312 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B1EC25C2B27776500F1A312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B1EC25F2B27776500F1A312 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B1EC2662B2777D800F1A312 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8B1EC2682B2777FB00F1A312 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		8B1EC26A2B27781700F1A312 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		8B1EC26C2B27783500F1A312 /* URLCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCreater.swift; sourceTree = "<group>"; };
+		8B1EC26E2B27788D00F1A312 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		8BAF2F7E2B28272500F14FED /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		8BAF2F802B28309600F14FED /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,14 @@
 			isa = PBXGroup;
 			children = (
 				8B1EC2582B27776400F1A312 /* MemoApp_SwiftUIApp.swift */,
+				8B1EC2662B2777D800F1A312 /* APIError.swift */,
+				8B1EC2682B2777FB00F1A312 /* Memo.swift */,
+				8B1EC26C2B27783500F1A312 /* URLCreater.swift */,
+				8B1EC26A2B27781700F1A312 /* APIClient.swift */,
+				8B1EC26E2B27788D00F1A312 /* MemoData.swift */,
 				8B1EC25A2B27776400F1A312 /* ContentView.swift */,
+				8BAF2F7E2B28272500F14FED /* ListRow.swift */,
+				8BAF2F802B28309600F14FED /* InputView.swift */,
 				8B1EC25C2B27776500F1A312 /* Assets.xcassets */,
 				8B1EC25E2B27776500F1A312 /* Preview Content */,
 			);
@@ -137,8 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1EC26D2B27783500F1A312 /* URLCreater.swift in Sources */,
 				8B1EC25B2B27776400F1A312 /* ContentView.swift in Sources */,
 				8B1EC2592B27776400F1A312 /* MemoApp_SwiftUIApp.swift in Sources */,
+				8B1EC26F2B27788D00F1A312 /* MemoData.swift in Sources */,
+				8BAF2F7F2B28272500F14FED /* ListRow.swift in Sources */,
+				8B1EC2672B2777D800F1A312 /* APIError.swift in Sources */,
+				8BAF2F812B28309600F14FED /* InputView.swift in Sources */,
+				8B1EC26B2B27781700F1A312 /* APIClient.swift in Sources */,
+				8B1EC2692B2777FB00F1A312 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

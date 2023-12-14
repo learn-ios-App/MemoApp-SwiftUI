@@ -8,14 +8,50 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var memoData = MemoData()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(memoData.memos) { memo in
+                    ListRow(memo: memo)
+                        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                            Button(role: .destructive) {
+                                memoData.didTapDeleteButton(memo: memo)
+                            } label: {
+                                Label("Delete", systemImage: "trash")
+                            }
+                        }
+                }
+            }
+            .onAppear(perform: {
+                self.memoData.onAppear()
+        })
+            .navigationTitle("Memo")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        memoData.onAppear()
+                    }) {
+                        Image(systemName: "gobackward")
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        memoData.didTapPlusButton()
+                    }) {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
         }
-        .padding()
+        .sheet(isPresented: $memoData.isInput, content: {
+            InputView { memo in
+                memoData.didTapSaveButton(memo: memo)
+            } cancel: {
+                memoData.didTapCancelButton()
+            }
+
+        })
     }
 }
 
